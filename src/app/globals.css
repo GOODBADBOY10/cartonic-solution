@@ -46,7 +46,6 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
-/* Dark mode class support */
 .dark {
   --background: #0a0a0a;
   --foreground: #ededed;

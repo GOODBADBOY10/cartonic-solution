@@ -8,10 +8,9 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
         if (typeof window !== "undefined") {
             const saved = localStorage.getItem("theme");
             if (saved) return saved === "dark";
-            // fallback: check system preference
             return window.matchMedia("(prefers-color-scheme: dark)").matches;
         }
-        return false; // SSR fallback
+        return false;
     });
 
     useEffect(() => {
@@ -26,28 +25,6 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
             return newTheme;
         });
     };
-
-    // const [darkMode, setDarkMode] = useState(false);
-
-    // const toggleTheme = () => setDarkMode((prev) => !prev);
-
-    // useEffect(() => {
-    //     const saved = localStorage.getItem("theme");
-    //     if (saved === "dark") {
-    //         setDarkMode(true);
-    //         document.documentElement.classList.add("dark");
-    //     }
-    // }, []);
-
-    // const toggleTheme = () => {
-    //     setDarkMode((prev) => {
-    //         const newTheme = !prev ? "dark" : "light";
-    //         document.documentElement.classList.toggle("dark", newTheme === "dark");
-    //         localStorage.setItem("theme", newTheme);
-    //         return !prev;
-    //     });
-    // };
-
 
     return (
         <div className={darkMode ? "dark" : ""}>

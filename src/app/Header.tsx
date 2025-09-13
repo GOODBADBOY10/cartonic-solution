@@ -47,7 +47,7 @@ export default function Header({ isDarkMode, toggleTheme }: HeaderProps) {
                         </button>
                     </div>
 
-                    {/* Right side - User controls */}
+                    {/* Right side*/}
                     <div className="flex items-center space-x-3">
                         <button className="text-xs flex items-center gap-1 px-2 py-1 rounded text-gray-600 dark:text-gray-300">
                             <GalleryHorizontal className='w-4 h-4' />
