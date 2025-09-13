@@ -6,7 +6,7 @@ import Header from './Header';
 import Main from './Main';
 
 const App = () => {
-  
+
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const App = () => {
     <div className="min-h-screen transition-colors duration-300 bg-gray-50 dark:bg-gray-900">
 
       {/* Header */}
-      <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
+      {/* <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} /> */}
 
       {/* Main Content */}
       <Main />

@@ -1,6 +1,11 @@
 import { Sun, Moon, Home, Minus, Square, Triangle, Check, Type, Menu, Bell, Headphones, GalleryHorizontal } from 'lucide-react';
 
-export default function Header({isDarkMode, toggleTheme}) {
+type HeaderProps = {
+  isDarkMode: boolean;
+  toggleTheme: () => void;
+};
+
+export default function Header({ isDarkMode, toggleTheme }: HeaderProps) {
     return (
         <header className="border-b transition-colors duration-300 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
             <div className="max-w-7xl mx-auto px-6">
@@ -59,6 +64,7 @@ export default function Header({isDarkMode, toggleTheme}) {
                         >
                             {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
                         </button>
+
                         <div className="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center">
                             <span className="text-white text-xs">👤</span>
                         </div>
