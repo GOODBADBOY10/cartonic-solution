@@ -8,7 +8,7 @@ export default function Main() {
             title: "WAN 2.2",
             subtitle: "WAN 2.2 Image generation",
             description: "Generate complex images with this brand new and powerful WAN 2.2 model. Exceptional prompt adherence and photorealistic features.",
-            image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=300&fit=crop",
+            image: "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300&q=80",
             badge: "Try WAN 2.2",
             category: "AI"
         },
